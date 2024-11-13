@@ -1,0 +1,118 @@
+body {
+    margin: 0;  
+    height: 100%; 
+    background-image: url('../map.jpg');  
+    background-size:cover;  
+    background-position: center; 
+    background-attachment: fixed;  
+}
+
+.icon {
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+    width: 50px;
+    height: 50px;  
+    z-index: 10;
+}
+
+#iconArryn{
+    background-image: url('../assets/Arryn.png');
+    background-size: cover; 
+    background-position: center;
+}
+#iconBaratheon{
+    background-image: url('../assets/Baratheon.png');
+    background-size: cover; 
+    background-position: center;
+}
+#iconGreyjoy{
+    background-image: url('../assets/Greyjoy.png');
+    background-size: cover; 
+    background-position: center;
+}
+#iconHightower{
+    background-image: url('../assets/Hightower.png');
+    background-size: cover; 
+    background-position: center;
+}
+#iconLannister{
+    background-image: url('../assets/Lannister.png');
+    background-size: cover; 
+    background-position: center;
+}
+#iconMartell{
+    background-image: url('../assets/Martell.png');
+    background-size: cover; 
+    background-position: center;
+}
+#iconStark{
+    background-image: url('../assets/Stark.png');
+    background-size: cover; 
+    background-position: center;
+}
+#iconTargaryen{
+    background-image: url('../assets/Targaryen.png');
+    background-size: cover; 
+    background-position: center;
+}
+#iconTully{
+    background-image: url('../assets/Tully.png');
+    background-size: cover; 
+    background-position: center;
+}
+#iconTyrell{
+    background-image: url('../assets/Tyrell.png');
+    background-size: cover; 
+    background-position: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.7); 
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 20px;
+    width: 80%; 
+    max-width: 500px; 
+    height: auto;
+    max-height: 600px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Necessário para posicionar o botão de fechar */
+}
+
+
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
