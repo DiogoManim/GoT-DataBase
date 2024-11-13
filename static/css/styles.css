@@ -8,7 +8,7 @@ body {
 }
 
 .icon {
-    position: absolute;
+    position: fixed;
     color: white;
     cursor: pointer;
     z-index: 10;
