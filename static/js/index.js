@@ -38,3 +38,8 @@ window.onclick = function(event) {
         closeModal(modal.id);
     }
 };
+
+
+function navigateToPage(page) {
+    window.location.href = page;
+}

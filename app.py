@@ -8,8 +8,12 @@ cur = conn.cursor()
 cur.row_factory = sqlite3.Row
 
 @app.route('/')
-def home():
+def relations():
     return render_template('index.html')
+
+@app.route('/wars')
+def wars():
+    return render_template('wars.html')
 
 @app.route('/<name>')
 def panel(name):
