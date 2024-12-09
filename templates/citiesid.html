@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Thrones</title>
+    <link rel="stylesheet" href="../static/css/id.css"/>
+</head>
+<body>
+
+    <button onclick="window.location.href='/'" class="btn-home">
+        Home
+    </button>
+
+    <div class="container">
+    <div>
+        <h1>{{city.city}}</h1>
+
+        <p>Region: <a href="/regions/{{city.region_id}}">{{region.region}}</a> </p>
+
+        {% if houses %}
+        <h2>Houses at {{city.city}}:</h2>
+        <ul>
+            {% for h in houses %}
+            <li><a href="/houses/{{h.house_ID}}">{{h.house}}</a></li>
+           {% endfor %}
+        </ul>
+
+
+        {% else %}
+        <p><i>There are no houses at this city</i></p>
+
+        {% endif %}
+ 
+    </div>
+</div>
+
+</body>
+</html>

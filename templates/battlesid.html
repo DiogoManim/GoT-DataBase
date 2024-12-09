@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Thrones</title>
+    <link rel="stylesheet" href="../static/css/id.css"/>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Outfit:wght@100..900&family=Uncial+Antiqua&display=swap');
+
+body {
+    margin: 0;  
+    height: 100%;  
+    background-size:cover;  
+    background-color: rgba(231, 223, 207, 0.9);
+    background-position: center; 
+    background-attachment: fixed;  
+    color: #000;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container {
+    /* position: fixed;
+    top: 100px;
+    bottom: 80px;
+    right: 100px; */
+    align-items: center;
+    font-family: "Outfit";
+    font-size: 18px;
+    margin: auto;
+    z-index: 10;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* background-color: rgba(221, 197, 146, 0.9); */
+    border-radius: 20px;
+    width: 900px;
+    height: fit-content;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(86, 82, 82, 0.4); 
+
+    }
+
+    div.titulo {
+
+        font-size: 40px;
+        font-family: "Cinzel Decorative";
+        font-weight: 100;
+        text-align: center;
+        padding: 3vw;
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    div.op1 {
+        width: 400px;
+        height: fit-content;
+        display: inline-block;
+        background-color: rgba(180, 1, 1, 0.499);
+        margin-top: 20px;
+        margin-left: 0vw;
+        margin-right: 50px;
+        border-radius: 20px;
+    }
+
+
+    div.op2 {
+        width: 400px;
+        height: fit-content;
+        background-color: rgba(7, 118, 7, 0.444);
+        display: inline-block;
+        margin-top: 20px;
+        margin-right: 0vw;
+        margin-left: 50px;
+        border-radius: 20px;
+        float:right;
+    }
+
+img {
+    width: 380px;
+    margin: 10px;
+}
+</style>
+<body>
+
+    <button onclick="window.location.href='/'" class="btn-home">
+        Home
+    </button>
+
+    <div class="container">
+        <div class="col-md-12"></div>
+        <div class="titulo">{{battle.name}}</div>
+        <p>Region: <a href="/regions/{{region.region_id}}">{{region.region}}</a> </p>
+        <p>Year: {{battle.year}} </p>
+        <p>Type: {{battle.type}} </p>
+
+        {% if battle.major_capture == 0 %}
+        <p>Major capture: No </p>
+        {% else %}
+        <p>Major capture: Yes </p>
+        {% endif %}
+
+        {% if battle.major_death == 0 %}
+        <p>Major death: No </p>
+        {% else %}
+        <p>Major death: Yes </p>
+        {% endif %}
+
+        <!-- {% if battle.is_attacker_winner == 0 %} -->
+        
+        <!-- {% else %}
+        <div class="op2">
+        {% endif %} -->
+        <div class="op1">
+            <h2> ATTACK </h2>
+
+            <img src="{{attacker_king.imageUrl}}">
+
+            <h2> <a href="/characters/{{attacker_king.character_ID}}">{{attacker_king.character}}</a> </h2>
+
+            <br>
+            {% if battle.attacker_size %}
+            <p> Attack size: {{battle.attacker_size}}</p> 
+            <br>
+            {% endif %}
+
+            <p> Commanders: </p>
+            
+                {% for c in attack_commanders %}
+                <p><a href="/characters/{{c.character_ID}}">{{c.character}}</a></p>
+               {% endfor %}
+            
+               <br>
+            <p> Houses that fighted together: </p>
+        
+                {% for h in attacker_houses %}
+                <p><a href="/houses/{{h.house_ID}}">{{h.house}}</a></p>
+               {% endfor %}
+            <br>
+        </div>
+        <div class="op2">
+            <h2> DEFENSE </h2>
+
+            <img src="{{defender_king.imageUrl}}">
+
+            <h3> <a href="/characters/{{defender_king.character_ID}}">{{defender_king.character}}</a> </h3>
+
+            <br>
+            {% if battle.defender_size %}
+            <p> Defense size: {{battle.defender_size}}</p> 
+            <br>
+            {% endif %}
+
+            {% if defense_commanders %}
+            <p> Commanders: </p>
+                {% for c in defense_commanders %}
+                <p><a href="/characters/{{c.character_ID}}">{{c.character}}</a></p>
+               {% endfor %}
+               <br>
+            {% endif %}
+
+            <p> Houses that fighted together: </p>
+                {% for h in defender_houses %}
+                <p><a href="/houses/{{h.house_ID}}">{{h.house}}</a></p>
+               {% endfor %}
+            <br>
+        </div>
+    </div>
+
+
+</body>
+</html>

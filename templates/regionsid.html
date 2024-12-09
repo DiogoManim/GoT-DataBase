@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Thrones</title>
+    <link rel="stylesheet" href="../static/css/regions.css"/>
+    <script src="../static/js/regions.js" defer></script>
+
+</head>
+<body>
+
+    <button onclick="window.location.href='/'" class="btn-home">
+        Home
+    </button>
+
+    <!-- <div class="modal"> -->
+    <div>
+        <h1>{{region.Region}}</h1>
+
+        {% if ruller %}
+        <p>Rulled by: <a href="/houses/{{ruller.House_ID}}">{{ruller.House}}</a> </p>
+
+        {% else %}
+        <p><i>Not rulled by any house</i></p>
+
+        {% endif %}
+
+        <p>{{region.Description}}</p>
+
+        <h2>See more about the {{region.Region}}:</h2>
+
+        <ul>
+            <li><a href="/regions/{{region.Region_ID}}/battles">Battles</a></li>
+            <li><a href="/regions/{{region.Region_ID}}/houses">Houses</a></li>
+            <li><a href="/regions/{{region.Region_ID}}/cities">Cities</a></li>
+          </ul>
+ 
+    </div>
+
+    <div class=""></div>
+
+</body>
+</html>

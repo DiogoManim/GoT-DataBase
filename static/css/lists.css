@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Outfit:wght@100..900&family=Uncial+Antiqua&display=swap');
+
+body {
+    margin: 0;  
+    height: 100%;  
+    background-size:cover;  
+    background-color: rgba(231, 223, 207, 0.9);
+    background-position: center; 
+    background-attachment: fixed;  
+    color: #000;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Cinzel Decorative";
+    font-weight: bold;
+    margin-top: 40px;
+    justify-items: center;
+    align-items: center;
+    width: 50% !important;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+p {
+    font-size: 20px;
+}
+
+table {
+    align-items: center;
+    width: 50% !important;
+    margin: auto;
+    font-family: "Outfit";
+    justify-content: center;
+    padding: 0;border-collapse: collapse; }
+    table tr {
+      border-top: 1px solid #cccccc;
+      background-color: white;
+      margin: 0;
+      padding: 0; }
+      table tr:nth-child(2n) {
+        background-color: #f8f8f8; }
+      table tr th {
+        font-weight: bold;
+        border: 1px solid #cccccc;
+        margin: 0;
+        padding: 6px 13px; }
+      table tr td {
+        border: 1px solid #cccccc;
+        margin: 0;
+        padding: 6px 13px; }
+      table tr th :first-child, table tr td :first-child {
+        margin-top: 0; }
+      table tr th :last-child, table tr td :last-child {
+        margin-bottom: 0; }
+  
+.btn-home {
+    position: absolute; 
+    top: 30px; 
+    /* left: 50%;  */
+    left: 100px;
+    transform: translateX(-50%); 
+    padding: 10px 30px;
+    font-size: 24px;
+    font-family: "Cinzel Decorative";
+    border: none;
+    background-color: #333;
+    color: white;
+    /* background-color: #041629; 
+    color: white; */
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(86, 82, 82, 0.4); 
+}
+
+.btn-home:hover {
+    background-color: #0e233a; 
+    transform: translateX(-50%) scale(1.05); 
+}
+
+.btn-home:active {
+    background-color: #0a1520; 
+    transform: translateX(-50%) scale(1); 
+}
+
+
+.container {
+    position: fixed;
+    top: 100px;
+    bottom: 100px;
+    right: 100px;
+    z-index: 10;
+    text-align: center;
+    background-color: rgba(222, 206, 171, 0.9);
+    /* background-color: rgba(221, 197, 146, 0.9); */
+    border-radius: 20px;
+    width: 310px;
+    box-shadow: 0 4px 10px rgba(86, 82, 82, 0.4); 
+}
+
+.containermodal {
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 20px;
+    width: 750px;
+}
+
+
+

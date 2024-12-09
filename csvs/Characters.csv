@@ -1,0 +1,86 @@
+Character,Character_ID,Title,Gender,imageUrl,is_king,House_ID
+Daenerys Targaryen,100,Mother of Dragons,Female,https://thronesapi.com/assets/images/daenerys.jpg,0,378
+Samwell Tarly,101,Maester,Male,https://thronesapi.com/assets/images/sam.jpg,0,379
+Jon Snow,102,King of the North,Male,https://thronesapi.com/assets/images/jon-snow.jpg,0,363
+Arya Stark,103,No One,Female,https://thronesapi.com/assets/images/arya-stark.jpg,0,363
+Sansa Stark,104,Lady of Winterfell,Female,https://thronesapi.com/assets/images/sansa-stark.jpeg,0,363
+Brandon Stark,105,Lord of Winterfell,Male,https://thronesapi.com/assets/images/bran-stark.jpg,0,363
+Ned Stark,106,Lord of Winterfell,Male,https://thronesapi.com/assets/images/ned-stark.jpg,0,363
+Robert Baratheon,107,Lord of the Seven Kingdoms,Male,https://thronesapi.com/assets/images/robert-baratheon.jpeg,0,18
+Jaime Lannister,108,Lord Commander of the Kingsguard,Male,https://thronesapi.com/assets/images/jaime-lannister.jpg,0,229
+Cersei Lannister,109,Lady of Casterly Rock,Female,https://thronesapi.com/assets/images/cersei.jpg,0,229
+Catelyn Stark,110,Lady of Winterfell,Female,https://thronesapi.com/assets/images/catelyn-stark.jpg,0,363
+Robb Stark,111,Lord of Winterfell,Male,https://thronesapi.com/assets/images/robb-stark.jpg,1,363
+Theon Greyjoy,112,Captain of Sea Bitch,Male,https://thronesapi.com/assets/images/theon.jpg,0,170
+Joffrey Baratheon,113,"Lord of the Seven Kingdoms, Protector of the Realm",Male,https://thronesapi.com/assets/images/joffrey.jpg,1,229
+Tyrion Lannister,114,Hand of the Queen,Male,https://thronesapi.com/assets/images/tyrion-lannister.jpg,0,229
+The Hound,115,The Hound,Male,https://thronesapi.com/assets/images/the-hound.jpg,0,73
+Petyr Baelish,116,Littlefinger,Male,https://thronesapi.com/assets/images/littlefinger.jpg,0,11
+Davos Seaworth,117,Hand of the King,Male,https://thronesapi.com/assets/images/davos-seaworth.png,0,341
+Stannis Baratheon,118,Lord of Dragonstone,Male,https://thronesapi.com/assets/images/stannis.jpg,1,18
+Varys,119,Master of Whisperers,Male,https://thronesapi.com/assets/images/varys.jpg,0,378
+Khal Drogo,120,Khal,Male,https://thronesapi.com/assets/images/khal-drogo.jpg,0,
+Margaery Tyrell,121,Queen of the Seven Kingdoms,Female,https://thronesapi.com/assets/images/margaery-tyrell.jpg,0,398
+Ygritte,122,Spearwife,Female,https://thronesapi.com/assets/images/ygritte.jpg,0,
+Brienne of Tarth,123,Lady Brienne,Female,https://thronesapi.com/assets/images/brienne-tarth.jpeg,0,18
+Missandei,124,Queen's Personal Advisor,Female,https://thronesapi.com/assets/images/missandei.jpeg,0,378
+Gilly,125,The Rabbit Keeper,Female,https://thronesapi.com/assets/images/gilly.jpg,0,
+Viserys Targaryn,126,King Viserys III,Male,https://thronesapi.com/assets/images/viserys-targaryan.jpg,0,378
+Rickon Stark,127,Prince,Male,https://thronesapi.com/assets/images/rickon.jpg,0,363
+Roose Bolton,128,Lord of Dreadfort,Male,https://thronesapi.com/assets/images/roose-bolton.jpg,0,35
+Daario Naharis,129,Commander of the Second Sons,Male,https://thronesapi.com/assets/images/daario.jpg,0,378
+Shae,130,Mistress,Female,https://thronesapi.com/assets/images/shae.jpg,0,
+Tommen Baratheon,131,Prince,Male,https://thronesapi.com/assets/images/tommen.jpg,1,18
+Gendry Baratheon,132,Lord of Storm's End,Male,https://thronesapi.com/assets/images/gendry.jpg,0,18
+Jorah Mormont,133,Knight,Male,https://thronesapi.com/assets/images/jorah-mormont.jpg,0,363
+Robert Baratheon,134,King,Male,https://thronesapi.com/assets/images/king-robert.jpg,0,18
+Ramsay Bolton,135,The Bastard of Bolton,Male,https://thronesapi.com/assets/images/ramsey-bolton.jpg,0,35
+Talisa Stark,136,Queen Consort,Female,https://thronesapi.com/assets/images/talisa-stark.jpg,0,363
+Jeor Mormont,137,Lord Commander of the Knight's Watch,Male,https://thronesapi.com/assets/images/lord-commander-mormont.jpg,0,363
+High Sparrow,138,High Septon,Male,https://thronesapi.com/assets/images/the-high-sparrow.jpg,0,
+Oberyn Martell,139,Red Viper of Dorne,Male,https://thronesapi.com/assets/images/red-viper.jpg,0,445
+Melisandre,140,Melisandre of Asshai,Female,https://thronesapi.com/assets/images/melisandre.jpg,0,
+Jaqen H'ghar,141,Faceless Men of Braavos,Male,https://thronesapi.com/assets/images/jaqen-hghar.jpg,0,
+Tywin Lannister,142,Lord Paramount of Westerlands,Male,https://thronesapi.com/assets/images/tywin-lannister.jpg,0,229
+Ellaria Sand,143,Paramour of Prince Oberyn Martell,Female,https://thronesapi.com/assets/images/ellaria-sand.jpg,0,400
+Tormund Giantsbane,144,Free Folk Warrior,Male,https://thronesapi.com/assets/images/tormund-giantsbane.jpg,0,446
+Yara Greyjoy,145,Lady of the Iron Islands,Female,https://thronesapi.com/assets/images/yara-greyjoy.jpg,0,170
+Euron Greyjoy,146,King of the iron Islands,Male,https://thronesapi.com/assets/images/euron-greyjoy.jpg,1,170
+Hodor,147,Servant of House Stark,Male,https://thronesapi.com/assets/images/hodor.jpg,0,363
+Pycelle,148,Grand Maester of the Seven Kingdoms,Male,https://thronesapi.com/assets/images/pycelle.jpg,0,378
+Grey Worm,149,Commander of the Unsullied,Male,https://thronesapi.com/assets/images/greyworm.jpg,0,378
+Olenna Tyrell,150,Queen of Thorns,Female,https://thronesapi.com/assets/images/olenna-tyrell.jpg,0,398
+Qyburn,151,Former maester of the Citadel,Male,https://thronesapi.com/assets/images/qyburn.jpg,0,35
+Bronn,152,Lord of Highgarden,Male,https://thronesapi.com/assets/images/bronn.jpg,0,
+Balon Greyjoy,153,Lord of the Iron Islands,Male,https://static.wikia.nocookie.net/gameofthrones/images/1/19/Balon-profile.png/revision/latest/scale-to-width-down/1000?cb=20170420085750,1,170
+Renly Baratheon,154,Lord of Storm's End,Male,https://static.wikia.nocookie.net/gameofthrones/images/e/e6/Renly_Baratheon.png/revision/latest?cb=20150819190554&path-prefix=pt-br,1,18
+Mance Rayder,155,King Beyond the Wall,Male,https://static.wikia.nocookie.net/gameofthrones/images/1/17/GOT_Season_5_10.jpg/revision/latest/scale-to-width-down/1000?cb=20220312115016&path-prefix=pt-br,1,446
+Gregor Clegane,156,Ser,Male,https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg,0,229
+Victarion Greyjoy,157,Lord Captain of the Iron Fleet,Male,https://awoiaf.westeros.org/images/thumb/6/67/E126dafda1c36b603790ff37d55073a0-da0jsna.jpg/1080px-E126dafda1c36b603790ff37d55073a0-da0jsna.jpg,0,170
+Asha Greyjoy,158,Queen of the Iron Islands,Female,https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg,0,170
+Rodrik Cassel,159,Master-at-arms at Winterfell,Male,https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg,0,62
+Dagmer Cleftjaw,160,,Male,https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg,0,170
+Helman Tallhart,161,Master of Torrhen's Square,Male,https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg,0,376
+Robett Glover,162,,Male,https://static.wikia.nocookie.net/gameofthrones/images/6/64/702_Robett_Profile.png/revision/latest?cb=20170830232320,0,35
+Walder Frey,163,Lord of the Crossing,Male,https://static.wikia.nocookie.net/gameofthrones/images/e/e4/S06E06_-_Walder_Frey_Cropped_new.jpg/revision/latest?cb=20161215025257,0,17
+Rorge,164,,Male,https://static.wikia.nocookie.net/gameofthrones/images/a/af/Rorge_S04.jpg/revision/latest?cb=20170307154737,0,229
+Mace Tyrell,165,Lord of Highgarden,Male,https://static.wikia.nocookie.net/gameofthrones/images/f/f0/Profile-MaceTyrell.png/revision/latest?cb=20170729074743,0,398
+Loras Tyrell,166,Lord Commander of the Kingsguard,Male,https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg,0,398
+Daven Lannister,167,Warden of the West,Male,https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg,0,229
+Jonos Bracken,168,,Male,https://static.wikia.nocookie.net/gameofthrones/images/e/ee/Jonos_Bracken.jpg/revision/latest?cb=20110622121235,0,395
+Clement Piper,169,Lord of Pinkmaiden,Male,https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg,0,304
+Beric Dondarrion,170,Lord of Blackhaven,Male,https://static.wikia.nocookie.net/gameofthrones/images/4/44/803_Beric_Promo_Crop.png/revision/latest?cb=20190503201035,0,104
+Edmure Tully,171,Lord Paramount of the Trident,Male,https://static.wikia.nocookie.net/gameofthrones/images/3/33/Edmure_Tully.png/revision/latest?cb=20151219130530&path-prefix=pt-br,0,395
+Andros Brax,172,Lord of Hornvale,Male,https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg,0,41
+Lyman Darry,173,Lord of Darry,Male,https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg,0,99
+Bran Stark,174,Three-Eyed Raven,Male,https://static.wikia.nocookie.net/gameofthrones/images/8/81/KingBran.PNG/revision/latest?cb=20190520173855,0,363
+Stafford Lannister,175,,Male,https://static.wikia.nocookie.net/lucerne/images/d/dc/Stafford_Lannister_Cover_Front_Amazing_-_Midgard.png/revision/latest?cb=20230115233857,0,229
+Amory Lorch,176,,Male,https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg,0,245
+Rolph Spicer,177,Lord of Castamere,Male,https://static.wikia.nocookie.net/iron-throne-role-play/images/8/86/Rolph_Spicer.jpg/revision/latest?cb=20161120213819,0,358
+Randyll Tarly,178,,Male,https://static.wikia.nocookie.net/gameofthrones/images/7/78/Randyll-Tarly-Profile.png/revision/latest?cb=20170815052729,0,379
+Vargo Hoat,179,Commander of the Brave Companions,Male,https://static.wikia.nocookie.net/villains/images/0/01/Locke-3x04.jpg/revision/latest?cb=20140420234731,0,447
+Jason Mallister,180,Lord of Seagard,Male,https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg,0,254
+Gilbert Farring,181,Castellan of Storm's End,Male,https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg,0,123
+Rolland Storm,182,Castellan of Dragonstone,Male,https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg,0,61
+Brynden Tully,183,Castellan of Riverrun,Male,https://static.wikia.nocookie.net/gameofthrones/images/6/61/6x07_Blackfish.png/revision/latest/scale-to-width-down/1000?cb=20160601191023,0,395
+Tytos Blackwood,184,Lord of Raventree Hall,Male,https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg,0,28

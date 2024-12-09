@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game of Thrones</title>
-    <link rel="stylesheet" href="../static/css/styles.css">
-    <script src="../static/js/index.js" defer></script>
+    <link rel="stylesheet" href="../static/css/regions.css">
+    <script src="../static/js/regions.js" defer></script>
 
 </head>
 <body>
 
-    <div class="navbar">
-        <button onclick="navigateToPage('wars')">Wars</button>
+    <button onclick="window.location.href='/'" class="btn-home">
+        Home
+    </button>
+
+    <div class="container">
+        <h1>Regions</h1>
+
+        {% for region in regions %}
+        <p>
+        <a href="/regions/{{region.Region_ID}}">{{region.Region}}</a>
+        <!-- {{region.Region}} -->
+        </p>
+        {% endfor %}
     </div>
 
     <div class="icon" id="iconArryn" style="top: 35vh; left: 43vh;" onclick="openModal('arryn')"></div>
@@ -23,7 +34,7 @@
     <div class="icon" id="iconGreyjoy" style="top: 35vh; left: 17vh;" onclick="openModal('greyjoy')"></div>
     <div id="greyjoy" class="modal"></div>
 
-    <div class="icon" id="iconHightower" style="top: 15vh; left: 34vh;" onclick="openModal('hightower')"></div>
+    <div class="icon" id="iconHightower" style="top: 50vh; left: 27vh;" onclick="openModal('hightower')"></div>
     <div id="hightower" class="modal"></div>
 
     <div class="icon" id="iconLannister" style="top: 47vh; left: 22vh;" onclick="openModal('lannister')"></div>
@@ -43,6 +54,9 @@
 
     <div class="icon" id="iconTyrell" style="top: 57vh; left: 27vh;" onclick="openModal('tyrell')"></div>
     <div id="tyrell" class="modal"></div>
+
+
+    <div class=""></div>
 
 </body>
 </html>

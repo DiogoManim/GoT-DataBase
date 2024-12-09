@@ -1,0 +1,11 @@
+Region_ID,Region,Description,Rulled_by_House_ID
+1,North,"Uma região fria e extensa, conhecida por suas terras inóspitas e densas florestas. É governada tradicionalmente pela Casa Stark de Winterfell. Os nortistas são conhecidos por sua lealdade e resiliência.",363
+2,Vale of Arryn,"Uma região montanhosa protegida por cadeias de montanhas e acessada apenas pelo Portão Sangrento. É governada pela Casa Arryn de Ninho da Águia, uma fortaleza praticamente impenetrável situada no alto de um penhasco.",8
+3,Riverlands,"Uma região fértil atravessada por vários rios, localizada no centro de Westeros. Governada tradicionalmente pela Casa Tully de Correrio, mas frequentemente alvo de conflitos devido à sua localização estratégica.",395
+4,Iron Islands,"Um arquipélago rochoso e árido no oeste de Westeros, governado pela Casa Greyjoy de Pyke. Seus habitantes, conhecidos como Homens de Ferro, são famosos por sua cultura marítima e práticas de saque.",170
+5,Westerlands,"Rica em minas de ouro, esta região é governada pela Casa Lannister de Rochedo Casterly. É conhecida por sua opulência e fortaleza imponente.",229
+6,Crownlands,"A região ao redor da capital, Porto Real, é governada diretamente pelo Trono de Ferro. Inclui a cidade mais populosa de Westeros e a Fortaleza Vermelha, sede do poder real.",17
+7,Reach,"Uma das regiões mais férteis e povoadas de Westeros, conhecida por sua produção agrícola. Governada pela Casa Tyrell de Jardim de Cima, é famosa por sua cultura refinada e cavalaria.",398
+8,Stormlands,"Uma região costeira com tempestades frequentes, conhecida por seus cavaleiros valentes e clima severo. É governada pela Casa Baratheon de Ponta Tempestade, uma fortaleza situada à beira do mar.",18
+9,Dorne,"Localizada no extremo sul de Westeros, Dorne é conhecida por seu clima árido e cultura distinta, influenciada pelos Ândalos e pelos Rhoynar. Governada pela Casa Martell de Lançassolar, é famosa por sua resistência e tradições únicas.",260
+10,Beyond the Wall,"Um território vasto e selvagem ao norte da Muralha, habitado por tribos livres chamadas de Selvagens, além de perigosos Caminhantes Brancos. É uma terra gelada e inexplorada.",

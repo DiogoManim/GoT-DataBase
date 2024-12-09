@@ -1,0 +1,224 @@
+City,City_ID,Region_ID
+Acorn Hall,1,3
+Amberly,2,8
+Antlers,3,6
+Appleton,4,7
+Arbor,5,7
+Ashemark,6,5
+Ashford,7,7
+Atranta,8,3
+Bandallon,9,7
+Banefort,10,5
+Barrow Hall,11,1
+Bear Island,12,1
+Bitterbridge,13,7
+Blackcrown,14,7
+Blackhaven,15,8
+Blackmont,16,9
+Blackpool,17,1
+Blacktyde Castle,18,4
+Breakstone Hill,19,1
+Breakwater,20,2
+Brightwater Keep,21,7
+Broad Arch,22,8
+Bronzegate,23,8
+Brownhollow,24,6
+Cape Wrath,25,8
+Castamere,26,5
+Casterly Rock,27,5
+Castle Cerwyn,28,1
+Castle Lychester,29,3
+Cider Hall,30,7
+Claw Isle,31,6
+Clegane's Keep,32,5
+Coldmoat,33,7
+Coldwater Burn,34,2
+Cornfield,35,5
+Corpse Lake,36,4
+Crag,37,5
+Crakehall,38,5
+Crow Spike Keep,39,4
+Crow's Nest,40,8
+Darkdell,41,7
+Darry,42,3
+Deep Den,43,5
+Deepdown,44,1
+Deepwood Motte,45,1
+Downdelving,46,4
+Dragonstone,47,6
+Dragonstone & Red Keep & Summerhall,48,6
+Dreadfort,49,1
+Drearfort,50,2
+Driftmark (castle) & High Tide,51,6
+Driftwood Hall,52,1
+Dun Fort,53,6
+Dyre Den,54,6
+Evenfall Hall,55,8
+Eyrie,56,2
+Faircastle,57,5
+Fawnton,58,8
+Feastfires,59,5
+Felwood,60,8
+Flint's Finger,61,1
+Gallowsgrey,62,8
+Gates of the Moon,63,2
+Ghost Hill,64,9
+Godsgrace,65,9
+Golden Tooth,66,5
+Goldengrove,67,7
+Goldgrass,68,1
+Grandview,69,8
+Grassfield Keep,70,7
+Great Wyk,71,4
+Greenfield,72,5
+Greenshield,73,7
+Greenstone,74,8
+Grey Garden & Greyshield,75,4
+Grey Glen,76,2
+Greywater Watch,77,1
+Griffin's Roost,78,8
+Grimston,79,7
+Gull Tower,80,2
+Gulltown,81,2
+Hag's Mire,82,3
+Hammerhal,83,7
+Hammerhorn,84,4
+Harlaw,85,4
+Harlaw Hall,86,4
+Harrenhal,87,3
+Harridan Hill,88,4
+Harroway Tower,89,3
+Harvest Hall,90,8
+Hayford,91,6
+Haystack Hall,92,8
+Heart's Home,93,2
+Hellgate Hall,94,9
+Hellholt,95,9
+High Hermitage,96,9
+Highgarden,97,7
+Highpoint,98,1
+Hightower,99,7
+Holyhall,100,7
+Honeyholt,101,7
+Horn Hill,102,7
+Hornvale,103,5
+Hornwood,104,1
+Iron Holt,105,4
+Ironoaks,106,2
+Ivy Hall,107,7
+Karhold,108,1
+Kayce,109,5
+Kingsgrave,110,9
+Kingshouse,111,1
+Lannisport,112,5
+Last Hearth,113,1
+Leafy Lake,114,7
+Lemonwood,115,9
+Littlesister,116,2
+Lonely Light,117,4
+Longbow Hall,118,2
+Longsister,119,2
+Longtable,120,7
+Lordsport,121,4
+Maidenpool,122,3
+Mistwood,123,8
+Misty Isle,124,3
+Mormont Keep,125,1
+New Barrel,126,7
+New Castle,127,1
+Newkeep,128,2
+Nightsong,129,8
+Ninestars,130,2
+Northern mountains,131,1
+Oakenshield,132,4
+Oakenshield Castle,133,7
+Old Anchor,134,2
+Old Oak,135,7
+Old Wyk,136,4
+Oldcastle,137,1
+Oldstones,138,3
+Orkmont,139,4
+Orkmont & Hoare Castle & Fairmarket & Harrenhall,140,3
+Paps,141,2
+Parchments,142,8
+Pebble,143,2
+Pebbleton Tower,144,4
+Pinkmaiden Castle,145,3
+Poddingfield,146,8
+Pyke,147,4
+Rain House,148,8
+Raventree Hall,149,3
+Red Keep,150,6
+Red Lake,151,7
+Redfort,152,2
+Rills,153,1
+Ring,154,7
+Risley Glade,155,7
+Riverrun,156,3
+Rook's Rest,157,6
+Rosby,158,6
+Runestone,159,2
+Salt Shore,160,9
+Saltcliffe,161,4
+Saltpans,162,3
+Sandship & Sunspear,163,9
+Sandstone,164,9
+Sarsfield,165,5
+Seagard,166,3
+Sealskin Point,167,4
+Sharp Point,168,6
+Shatterstone,169,4
+Silverhill,170,5
+Skyreach,171,9
+Smithyton,172,7
+Snakewood,173,2
+Somewhere Beyond the Wall,174,10
+Somewhere in Crownlands,175,6
+Somewhere in Dorne,176,9
+Somewhere in Iron Islands,177,4
+Somewhere in North,178,1
+Somewhere in Reach,179,7
+Somewhere in Riverlands,180,3
+Somewhere in Stormlands,181,8
+Somewhere in Vale of Arryn,182,2
+Somewhere in Westerlands,183,5
+Southshield,184,4
+Sow's Horn,185,6
+Spottswood,186,9
+Standfast,187,7
+Starfall,188,9
+Starpike,189,7
+Stokeworth,190,6
+Stone Hedge,191,3
+Stonedance,192,6
+Stonehelm,193,8
+Stony Shore,194,1
+Storm's End,195,8
+Strongsong,196,2
+Sunhouse,197,7
+Sweetport Sound,198,6
+Tarbeck Hall,199,5
+Ten Towers,200,4
+Three Sisters,201,2
+Three Towers,202,7
+Tor,203,9
+Torrhen's Square,204,1
+Tower of Glimmering,205,4
+Tumbleton,206,7
+Twins,207,3
+Uplands,208,7
+Vaith,209,9
+Volmark & Greenshield,210,4
+Wayfarer's Rest,211,3
+Weeping Town,212,8
+Whispers,213,6
+Whitewalls,214,3
+Wickenden,215,2
+Widow's Watch,216,1
+Willow Wood,217,3
+Winterfell,218,1
+Witch Isle,219,2
+Wolf's Den,220,1
+Wyl (castle),221,9
+Wyndhall,222,5
+Yronwood,223,9

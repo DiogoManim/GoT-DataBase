@@ -1,0 +1,37 @@
+Battle_ID,Battle_Name,Year,is_attacker_winner,battle_type,major_death,major_capture,attacker_size,defender_size,region_id,AttackerKing_ID,DefenderKing_ID 
+1,Battle of the Golden Tooth,298,1,pitched battle,1,0,15000,4000,5,113,111
+2,Battle at the Mummer's Ford,298,1,ambush,1,0,,120,3,113,111
+3,Battle of Riverrun,298,1,pitched battle,0,1,15000,10000,3,113,111
+4,Battle of the Green Fork,298,0,pitched battle,1,1,18000,20000,3,111,113
+5,Battle of the Whispering Wood,298,1,ambush,1,1,1875,6000,3,111,113
+6,Battle of the Camps,298,1,ambush,0,0,6000,12625,3,111,113
+7,Sack of Darry,298,1,pitched battle,0,0,,,3,113,111
+8,Battle of Moat Cailin,299,1,pitched battle,0,0,,,1,153,111
+9,Battle of Deepwood Motte,299,1,siege,0,0,1000,,1,153,111
+10,Battle of the Stony Shore,299,1,ambush,0,0,264,,1,153,111
+11,Battle of Torrhen's Square,299,1,pitched battle,0,0,244,900,1,111,153
+12,Battle of Winterfell,299,1,ambush,0,1,20,,1,153,111
+13,Sack of Torrhen's Square,299,1,siege,0,1,,,1,153,153
+14,Sack of Winterfell,299,1,ambush,1,0,618,2000,1,113,111
+15,Battle of Oxcross,299,1,ambush,1,1,6000,10000,5,111,113
+16,Siege of Storm's End,299,1,siege,1,0,5000,20000,8,118,154
+17,Battle of the Fords,299,0,pitched battle,0,0,20000,10000,3,113,111
+18,Sack of Harrenhal,299,1,ambush,1,0,100,100,3,111,113
+19,Battle of the Crag,299,1,ambush,0,0,6000,,5,111,113
+20,Battle of the Blackwater,299,0,pitched battle,1,1,21000,7250,6,118,113
+21,Siege of Darry,299,1,siege,0,0,,,3,111,113
+22,Battle of Duskendale,299,0,pitched battle,1,0,3000,,6,111,113
+23,Battle of the Ruby Ford,299,1,pitched battle,0,0,,6000,3,113,111
+24,Retaking of Harrenhal,299,1,pitched battle,1,0,,,3,113,
+25,The Red Wedding,299,1,ambush,1,1,3500,3500,3,113,111
+26,Siege of Seagard,299,1,siege,0,1,,,3,111,113
+27,Battle of Castle Black,300,0,siege,1,1,100000,1240,10,118,155
+28,Fall of Moat Cailin,300,1,siege,0,0,,,1,113,153
+29,Retaking of Deepwood Motte,300,1,pitched battle,0,0,4500,200,1,118,153
+30,Battle of the Shield Islands,300,1,pitched battle,0,0,,,7,153,113
+31,"Invasion of Ryamsport, Vinetown, and Starfish Harbor",300,1,razing,0,0,,,7,153,113
+32,Second Seige of Storm's End,300,1,siege,0,0,,200,8,113,118
+33,Siege of Dragonstone,300,1,siege,0,0,2000,,8,113,118
+34,Siege of Riverrun,300,1,siege,0,0,3000,,3,113,111
+35,Siege of Raventree,300,1,siege,0,1,1500,,3,113,111
+36,Siege of Winterfell,300,0,siege,0,0,5000,8000,1,118,113

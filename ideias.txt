@@ -1,0 +1,58 @@
+QUERIES!
+
+PAGINA PRINCIPAL (/):
+    -> Capa com imagem (1)
+    -> botão start, view map, view regions (1)
+    -> fonte do got
+    -> curiosidades (saiba mais)
+    -> conheça melhor o universo de game of thrones
+    -> estatisticas gerais
+
+PAGINA MAPA (/Regions):
+    -> Emblemas das familias que comandam as REGIOES
+    -> Ao clicar no emblema (pop-up), apresentar o nome da regiao, descricao e ter várias opções como: view battles; view cities; view houses.
+
+    PAGINA REGIONS/BATTLES (/Regions/Region_ID/Battles):
+        -> Lista com as batalhas na dada região, com o link para a respetiva Battle/Battle_ID
+
+    PAGINA REGIONS/CITIES (/Regions/Region_ID/Cities):
+        -> Lista com as cidades na dada região, com o link para a respetiva City/City_ID
+
+    PAGINA REGIONS/HOUSES (/Regions/Region_ID/Houses):
+        -> Lista com as casas na dada região, com o link para a respetiva House/House_ID
+
+PAGINA BATTLES (/Battles):
+    -> Listagem de todas as batalhas que aconteceram. Mostrar o nome, ano, região, casas participantes e resultado.
+    -> Tentar fazer filtros como por exemplo: filtrar por ano; filtrar por região; filtrar por casa participante; por resultado (vitória do atacante, vitoria do defensor)
+    -> Pequena estatística a informar quantas batalhas estão a ser listadas (no caso de ter fitros este número deve atualizar)
+
+    PAGINA BATTLE ESPECIFICA (/Battles/Battle_ID):
+        -> Imagem com duas espadas ao centro, dividindo o ecrã e ter de um lado o atacante e do outro o defensor
+        -> Tamanho do ataque, comandante, rei atancante/defensor, familias que batalharam, (possivelmente o tipo)...
+        -> Winner com uma cor especifica para distinguir, ou um simbolo
+
+PAGINA HOUSES (/Houses):
+    -> Fazer uma lista principal das familias. Incluir: nome, blazon, slogan, região, numero de characters associado, numero de batalhas que participou
+    -> Também se pode fazer filtros por região, número de membros, etc. Tentar talvez fazer um método de pesquisa por texto
+    -> Pequena estatística a informar quantas familias estão a ser listadas
+
+    PAGINA HOUSE ESPECIFICA (/Houses/House_ID):
+        -> 
+        -> Casas aliadas (que lutaram mais com), ou rivais (que lutaram mais contra)
+
+
+PAGINA CITIES (/Cities):
+    -> Criar um filtro para ordenar alfabéticamente ou pela relevância (que neste caso poderá ser o número de casas naquela cidade)
+
+PAGINA CHARACTER (/Characters):
+    -> Imagem do personagem
+
+
+
+
+
+IDEIAS:
+    QUANTIDADES DE BATALHAS QUE CADA REI GANHOU
+
+NOTAS:
+    Foram apagadas casas da tabela 'Houses' que não tinham nenhuma informação associada (irrelevante).
