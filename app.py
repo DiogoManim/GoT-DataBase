@@ -52,6 +52,28 @@ def get_region(id):
 
     return render_template('regionsid.html', region=region, ruller=ruller)
 
+######## Casas por região
+@APP.route('/regions/<int:id>/houses')
+def houses_by_region(id):
+    houses = db.execute(
+        '''
+        SELECT House, House_ID, Words
+        FROM Houses natural join Cities natural join Regions
+        WHERE Region_ID=?
+        ORDER BY House
+        ''', [id]).fetchall()
+    
+    if not houses:
+        abort(404, 'Region ID {} does not exist.'.format(id))
+
+    qtd = db.execute(
+        '''
+        SELECT count(house_id) AS qtd
+        FROM Houses natural join Cities natural join Regions
+        WHERE Region_ID=?;
+        ''', [id]).fetchone()
+    return render_template('houses.html', houses=houses, qtd=qtd)
+
 ############ CASAS
 @APP.route('/houses')
 def houses():
@@ -298,15 +320,6 @@ def get_character(id):
 
     return render_template('charactersid.html', character=character, king_battles=king_battles, command_battles=command_battles)
 
-
-
-@APP.route('/<name>')
-def panel(name):
-    try:
-        return render_template(f'components/{name}/{name}.html')
-    except Exception as e:
-        print(f"Erro ao carregar o painel: {e}")
-        return "Página não encontrada", 404
 
 
 if __name__ == '__main__':
