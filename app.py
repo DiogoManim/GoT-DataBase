@@ -72,7 +72,7 @@ def houses_by_region(id):
         FROM Houses natural join Cities natural join Regions
         WHERE Region_ID=?;
         ''', [id]).fetchone()
-    return render_template('houses.html', houses=houses, qtd=qtd)
+    return render_template('housesbyregion.html', houses=houses, qtd=qtd)
 
 ############ CASAS
 @APP.route('/houses')
