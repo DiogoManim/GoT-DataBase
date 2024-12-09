@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game of Thrones</title>
-    <link rel="stylesheet" href="../static/css/regions.css"/>
-    <script src="../static/js/regions.js" defer></script>
-
+    <link rel="stylesheet" href="../../static/css/regions.css"/>
+    <script src="../../static/js/regions.js" defer></script>
 </head>
 <body>
 
@@ -14,8 +13,7 @@
         Home
     </button>
 
-    <!-- <div class="modal"> -->
-    <div>
+    <div class="modal-content">
         <h1>{{region.Region}}</h1>
 
         {% if ruller %}
@@ -30,11 +28,11 @@
 
         <h2>See more about the {{region.Region}}:</h2>
 
-        <ul>
-            <li><a href="/regions/{{region.Region_ID}}/battles">Battles</a></li>
-            <li><a href="/regions/{{region.Region_ID}}/houses">Houses</a></li>
-            <li><a href="/regions/{{region.Region_ID}}/cities">Cities</a></li>
-          </ul>
+        
+            <p><a href="/regions/{{region.Region_ID}}/battles">Battles</a></p>
+            <p><a href="/regions/{{region.Region_ID}}/houses">Houses</a></p>
+            <p><a href="/regions/{{region.Region_ID}}/cities">Cities</a></p>
+ 
  
     </div>
 

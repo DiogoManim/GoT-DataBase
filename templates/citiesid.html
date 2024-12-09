@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game of Thrones</title>
-    <link rel="stylesheet" href="../static/css/id.css"/>
+    <link rel="stylesheet" href="../../static/css/id.css"/>
 </head>
 <body>
 
@@ -20,11 +20,11 @@
 
         {% if houses %}
         <h2>Houses at {{city.city}}:</h2>
-        <ul>
+        
             {% for h in houses %}
-            <li><a href="/houses/{{h.house_ID}}">{{h.house}}</a></li>
+            <p><a href="/houses/{{h.house_ID}}">{{h.house}}</a></p>
            {% endfor %}
-        </ul>
+ 
 
 
         {% else %}

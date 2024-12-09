@@ -70,6 +70,42 @@ def houses():
         ).fetchone()
     return render_template('houses.html', houses=houses, qtd=qtd)
 
+@APP.route('/houses/<int:id>/')
+def get_house(id):
+    house = db.execute(
+        '''
+        SELECT house_ID, house, Blazon_Description, blazon_url, city_id, city, region_id, region
+        FROM houses natural join cities natural join regions
+        Where house_ID = ?
+        ''', [id]).fetchone()
+    
+    if house is None:
+        abort(404, 'house ID {} does not exist.'.format(id))
+
+    battles = db.execute(
+        '''
+        select battle_name, battle_ID, attackerhouse_id
+        from battles natural join attacks
+        where attackerhouse_id=?
+        
+        union 
+
+        select battle_name, battle_ID, defenderhouse_id
+        from battles natural join defenses
+        where defenderhouse_id=?
+        ''', [id, id]).fetchall()
+    
+    characters = db.execute(
+        '''
+        select character, character_ID
+        from characters
+        where house_ID=?
+        ''', [id]).fetchall()
+    
+
+    return render_template('housesid.html', house=house, battles=battles, characters=characters)
+
+
 ############ BATALHAS
 @APP.route('/battles')
 def battles():
@@ -208,6 +244,59 @@ def get_city(id):
         ''', [id]).fetchall()
 
     return render_template('citiesid.html', city=city, region=region, houses=houses)
+
+
+############ PERSONAGENS
+@APP.route('/characters')
+def characters():
+    characters = db.execute(
+        '''
+        SELECT character, character_ID, Title
+        FROM characters
+        ORDER BY character
+        ''').fetchall()
+    
+    qtd = db.execute(
+        '''
+        SELECT count(character_id) AS qtd
+        FROM characters;
+        '''
+        ).fetchone()
+    return render_template('characters.html', characters=characters, qtd=qtd)
+    
+@APP.route('/characters/<int:id>/')
+def get_character(id):
+    character = db.execute(
+        '''
+        SELECT character_ID, character, title, gender, imageurl, is_king, house_id, house
+        FROM characters natural join houses
+        Where character_ID = ?
+        ''', [id]).fetchone()
+    
+    if character is None:
+        abort(404, 'character ID {} does not exist.'.format(id))
+
+    king_battles = db.execute(
+        '''
+        select battle_name, battle_ID
+        from battles
+        where attackerking_ID=? or defenderking_ID=?
+        ''', [id, id]).fetchall()
+    
+    command_battles = db.execute(
+        '''
+        select battle_id, battle_name
+        from attack_commanders natural join battles
+        where attackcommander_id=?
+
+        union
+
+        select battle_id, battle_name
+        from defense_commanders natural join battles
+        where defense_commander_id=?
+        ''', [id, id]).fetchall()
+
+    return render_template('charactersid.html', character=character, king_battles=king_battles, command_battles=command_battles)
 
 
 

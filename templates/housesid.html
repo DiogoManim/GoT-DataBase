@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Thrones</title>
+    <link rel="stylesheet" href="../../static/css/id.css"/>
+</head>
+<body>
+
+    <button onclick="window.location.href='/'" class="btn-home">
+        Home
+    </button>
+
+    <div class="container">
+    <div>
+        <h1>{{house.house}}</h1>
+
+        <img alt src="{{house.blazon_url}}">
+        <p><i>{{house.blazon_description}}</i></p>
+
+        <br>
+        <p>City: <a href="/cities/{{house.city_id}}">{{house.city}}</a> </p>
+        <p>Region: <a href="/regions/{{house.region_id}}">{{house.region}}</a> </p>
+
+
+        {% if characters %}
+        <h2>Characters in this family:</h2>
+        
+            {% for c in characters %}
+            <p><a href="/characters/{{c.character_ID}}">{{c.character}}</a></p>
+           {% endfor %}
+
+        {% endif %}
+
+        {% if battles %}
+        <h2>Battles the house fought in:</h2>
+        
+            {% for b in battles %}
+            <p><a href="/battles/{{battle_ID}}">{{b.battle_name}}</a></p>
+           {% endfor %}
+
+        {% endif %}
+ 
+ 
+    </div>
+</div>
+
+</body>
+</html>

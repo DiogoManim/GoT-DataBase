@@ -8,6 +8,8 @@ body {
     background-position: center; 
     background-attachment: fixed;  
     color: #000;
+    justify-content: center;
+     align-items: center;
 }
 
 h1 {
@@ -151,17 +153,21 @@ p {
 }
 
 .modal-content {
+    width: 50% !important;
+    margin: auto;
     background-color: rgb(255, 255, 255);
     color: black;
-    padding: 20px;
-    width: 80%; 
+    padding: 40px;
     max-width: 500px; 
     height: auto;
-    max-height: 600px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative; /* Necessário para posicionar o botão de fechar */
+    position: fixed;
+    top: 100px;
+    left: 370px;
+    align-self: center;
+    z-index: 10;
 }
 
 
