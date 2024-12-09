@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Thrones</title>
+    <link rel="stylesheet" href="../static/css/curiosities.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Outfit:wght@100..900&family=Uncial+Antiqua&display=swap">
+</head>
+<body>
+    <button onclick="window.location.href='/'" class="btn-home">
+        Home
+    </button>
+    <h2 class="center-align">Curiosities</h2>
+    <h6 class="center-align">Most attacked houses</h6>
+
+    <table>
+        <tr>
+            <th>
+                <b>Defender House</b>
+              </th>
+            <th>
+              <b>Total Attacks</b>
+            </th>
+        </tr>
+        {% for i in mostAttackedHouses %}
+        <tr>
+            <td>
+            <a href="/houses/{{i.house_id}}">{{ i.defender_house }}</a>
+            </td>
+            <td>
+            {{ i.total_attacks }}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h6 class="center-align">Battles with the most deaths</h6>
+
+    <table>
+        <tr>
+            <th>
+                <b>Battles</b>
+              </th>
+            <th>
+              <b>Total Deaths</b>
+            </th>
+        </tr>
+        {% for i in highestDeathsByBattle %}
+        <tr>
+            <td>
+            <a href="/battles/{{i.battle_id}}">{{ i.Batalha }}</a>
+            </td>
+            <td>
+            {{ i.total_de_mortes }}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h6 class="center-align">Regions with most battles</h6>
+
+    <table>
+        <tr>
+            <th>
+                <b>Region</b>
+              </th>
+            <th>
+              <b>Total Battles</b>
+            </th>
+        </tr>
+        {% for i in highestBattlesByRegion %}
+        <tr>
+            <td>
+            <a href="/regions/{{i.rID}}">{{ i.region_name }}</a>
+            </td>
+            <td>
+            {{ i.total_battles }}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h6 class="center-align">Most balanced battles</h6>
+
+    <table>
+        <tr>
+            <th>
+                <b>Battle</b>
+              </th>
+            <th>
+              <b>Army size difference</b>
+            </th>
+        </tr>
+        {% for i in mostEvenBattles %}
+        <tr>
+            <td>
+            <a href="/battles/{{i.battle_id}}">{{ i.battle_name }}</a>
+            </td>
+            <td>
+            {% if i.size_difference == 0 %}
+                Equal
+            {% else %}
+                {{ i.size_difference }}
+            {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+    <h6 class="center-align">Regions with most houses</h6>
+
+    <table>
+        <tr>
+            <th>
+                <b>Region</b>
+              </th>
+            <th>
+              <b>Total Houses</b>
+            </th>
+        </tr>
+        {% for i in mostHousesByRegion %}
+        <tr>
+            <td>
+            <a href="/regions/{{i.rID}}">{{ i.region_name }}</a>
+            </td>
+            <td>
+                {{ i.total_houses }}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>\
+    \<h6 class="center-align">Regions with most houses</h6>
+
+    <table>
+        <tr>
+            <th>
+                <b>Region</b>
+              </th>
+            <th>
+              <b>Total Houses</b>
+            </th>
+        </tr>
+        {% for i in mostHousesByRegion %}
+        <tr>
+            <td>
+            <a href="/regions/{{i.rID}}">{{ i.region_name }}</a>
+            </td>
+            <td>
+                {{ i.total_houses }}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h6 class="center-align">Average Houses per Region</h6>
+
+    <table>
+        <tr>
+            <th>
+                <b>Minimum</b>
+            </th>
+            <th>
+                <b>Average</b>
+            </th>
+            <th>
+                <b>Maximum</b>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                {{avgHousesByRegion.min}}
+            </td>
+            <td>
+                {{avgHousesByRegion.avg}}
+            </td>
+            <td>
+                {{avgHousesByRegion.max}}
+            </td>
+        </tr>
+    </table>
+
+    <h6 class="center-align">Gender Distribution</h6>
+
+    <table>
+        <tr>
+            <th>
+                <b>Gender</b>
+            </th>
+            <th>
+                <b>Percentage</b>
+            </th>
+        </tr>
+        {% for i in charactersByGender %}
+        <tr>
+            <td>
+                {{ i.gender }}
+            </td>
+            <td>
+                {{ i.percentage }}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+</body>
+</html>

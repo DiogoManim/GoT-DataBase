@@ -357,20 +357,81 @@ def get_character(id):
 
 @APP.route('/curiosities')
 def curiosities():
-    characters = db.execute(
+    mostAttackedHouses = db.execute(
         '''
-        SELECT character, character_ID, Title
-        FROM characters
-        ORDER BY character
-        ''').fetchall()
+        SELECT h.House AS Defender_House, COUNT(d.Battle_ID) AS Total_Attacks, h.house_id
+        FROM Houses h
+        JOIN Defenses d ON h.House_ID = d.DefenderHouse_ID
+        GROUP BY h.House
+        ORDER BY Total_Attacks DESC
+        LIMIT 3;
+        '''
+    ).fetchall()
+
+    highestDeathsByBattle = db.execute(
+        '''
+        SELECT Battle_Name AS Batalha, (Attacker_size + Defender_size) AS Total_de_Mortes, battle_id
+        FROM Battles
+        WHERE Attacker_size IS NOT NULL AND Defender_size IS NOT NULL
+        ORDER BY Total_de_Mortes DESC
+        LIMIT 3;
+        '''
+    ).fetchall()
+
+    highestBattlesByRegion = db.execute(
+        '''
+        SELECT r.Region AS Region_Name, COUNT(b.Battle_ID) AS Total_Battles, r.region_id as rID
+        FROM Regions r
+        JOIN Battles b ON r.Region_ID = b.Region_ID
+        GROUP BY r.Region
+        ORDER BY Total_Battles DESC
+        LIMIT 3;
+        '''
+    ).fetchall()
+
+    mostEvenBattles = db.execute(
+        '''
+        SELECT Battle_Name, ABS(Attacker_size - Defender_size) AS Size_Difference, battle_id
+        FROM Battles
+        WHERE Attacker_size IS NOT NULL AND Defender_size IS NOT NULL
+        ORDER BY Size_Difference ASC
+        LIMIT 3;
+        '''
+    ).fetchall()
+
+    mostHousesByRegion = db.execute(
+        '''
+        SELECT r.Region AS Region_Name, COUNT(h.House_ID) AS Total_Houses, r.region_id as rID
+        FROM Regions r
+        JOIN Cities c ON r.Region_ID = c.Region_ID
+        JOIN Houses h ON c.City_ID = h.City_ID
+        GROUP BY r.Region
+        ORDER BY Total_Houses DESC
+        LIMIT 3;
+        '''
+    ).fetchall()
+
+    avgHousesByRegion = db.execute(
+        '''
+        SELECT AVG(house_count) AS avg, MAX(house_count) AS max, MIN(house_count) AS min
+        FROM (
+            SELECT Region_ID, COUNT(*) AS house_count
+            FROM Cities c
+            JOIN Houses h ON c.City_ID = h.City_ID
+            GROUP BY Region_ID
+            )   
+        '''
+    ).fetchone()
+
+    charactersByGender = db.execute(
+        '''
+        SELECT Gender, (COUNT() * 100.0 / (SELECT COUNT() FROM Characters)) AS percentage
+        FROM Characters
+        GROUP BY Gender;
+        '''
+    ).fetchall()
     
-    qtd = db.execute(
-        '''
-        SELECT count(character_id) AS qtd
-        FROM characters;
-        '''
-        ).fetchone()
-    return render_template('characters.html', characters=characters, qtd=qtd)
+    return render_template('curiosities.html', mostAttackedHouses=mostAttackedHouses, highestDeathsByBattle=highestDeathsByBattle, highestBattlesByRegion=highestBattlesByRegion, mostEvenBattles=mostEvenBattles, mostHousesByRegion=mostHousesByRegion, avgHousesByRegion=avgHousesByRegion, charactersByGender=charactersByGender)
 
 if __name__ == '__main__':
     db.connect()

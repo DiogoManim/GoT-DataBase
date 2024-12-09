@@ -28,7 +28,7 @@
         <h2>Battles he fought for the throne:</h2>
         
             {% for b in king_battles %}
-            <p><a href="/battles/{{battle_ID}}">{{b.battle_name}}</a></p>
+            <p><a href="/battles/{{b.battle_ID}}">{{b.battle_name}}</a></p>
            {% endfor %}
 
         {% endif %}
@@ -37,7 +37,7 @@
         <h2>Battles he commanded:</h2>
         
             {% for b in command_battles %}
-            <p><a href="/battles/{{battle_ID}}">{{b.battle_name}}</a></p>
+            <p><a href="/battles/{{b.battle_ID}}">{{b.battle_name}}</a></p>
            {% endfor %}
 
         {% endif %}
