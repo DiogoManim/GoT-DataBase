@@ -85,7 +85,8 @@ a:hover {
     font-family: 'Cinzel Decorative', serif;
     font-weight: bold;
     gap: 10px;
-    width: 150px;
+    width: 100px;
+    margin-left: 10px;
 }
 
 .dropdown button::after {

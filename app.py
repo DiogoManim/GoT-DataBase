@@ -9,14 +9,7 @@ APP = Flask(__name__)
 # Start Page
 @APP.route('/')
 def index():
-    stats={}
-    stats = db.execute('''
-    SELECT COUNT(*) AS Houses FROM Houses;
-    ''').fetchone()
-
-    logging.info(stats)
-
-    return render_template('index.html',stats=stats)
+    return render_template('index.html')
 
 ############ REGIÕES
 @APP.route('/regions')
@@ -362,6 +355,22 @@ def get_character(id):
     return render_template('charactersid.html', character=character, king_battles=king_battles, command_battles=command_battles)
 
 
+@APP.route('/curiosities')
+def curiosities():
+    characters = db.execute(
+        '''
+        SELECT character, character_ID, Title
+        FROM characters
+        ORDER BY character
+        ''').fetchall()
+    
+    qtd = db.execute(
+        '''
+        SELECT count(character_id) AS qtd
+        FROM characters;
+        '''
+        ).fetchone()
+    return render_template('characters.html', characters=characters, qtd=qtd)
 
 if __name__ == '__main__':
     db.connect()

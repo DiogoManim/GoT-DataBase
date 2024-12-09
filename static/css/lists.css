@@ -43,7 +43,7 @@ a:hover{
 }
 
 table {
-    border-radius: 20px;
+    border-radius: 40px;
     align-items: center;
     width: 50% ;
     margin: auto;
@@ -53,18 +53,18 @@ table {
     padding: 0;border-collapse: collapse; }
     table tr {
       border-top: 1px solid #cccccc;
-      background-color: rgba(255, 255, 255, 0.50);
+      background-color: rgba(255, 255, 255, 0.80);
       margin: 0;
       padding: 0; }
       table tr:nth-child(2n) {
-        background-color: rgba(255, 255, 255, 0.50); }
+        background-color: rgba(255, 255, 255, 0.80); }
       table tr th {
         font-weight: bold;
-        border: 1px solid rgba(255, 255, 255, 0.50);
+        border: 1px solid rgba(255, 255, 255, 0.80);
         margin: 0;
         padding: 6px 13px; }
       table tr td {
-        border: 1px solid rgba(255, 255, 255, 0.50);
+        border: 1px solid rgba(255, 255, 255, 0.80);
         margin: 0;
         padding: 6px 13px; }
       table tr th :first-child, table tr td :first-child {
@@ -136,9 +136,9 @@ table {
   padding: 10px;
   font-size: 30px;
   border-radius: 25px;
-  background-color: #0e233a;
-  border-color: #0e233a;
-  color: #cccccc;
+  background-color: #151b21;
+  border-color: #1d252d;
+  color: #efeded;
   outline: none;
   transition: all 0.3s ease;
 }
@@ -148,7 +148,7 @@ table {
 }
 
 .search-btn {
-  background-color:#0e233a; 
+  background-color:#151b21; 
   color: white;
   border: none;
   border-radius: 50%;
@@ -160,7 +160,7 @@ table {
 }
 
 .search-btn:hover {
-  background-color:#114378;
+  background-color:#151b21;
   transform: scale(1.05);
 
 }
