@@ -74,6 +74,47 @@ def houses_by_region(id):
         ''', [id]).fetchone()
     return render_template('housesbyregion.html', houses=houses, qtd=qtd)
 
+########## Cidades por região
+@APP.route('/regions/<int:id>/cities')
+def cities_by_region(id):
+    cities = db.execute(
+        '''
+        SELECT city, region, city_id
+        FROM cities NATURAL JOIN regions
+        where region_ID = ?
+        ORDER BY city
+        ''', [id]).fetchall()
+    
+    qtd = db.execute(
+        '''
+        SELECT count(city_id) AS qtd
+        FROM cities
+        WHERE region_ID = ?
+        ''', [id]).fetchone()
+    
+    return render_template('citiesbyregion.html', cities=cities, qtd=qtd)
+
+########### Batalhas por região
+@APP.route('/regions/<int:id>/battles')
+def battles_by_region(id):
+    battles = db.execute(
+        '''
+        SELECT battle_name, battle_ID, battle_type, year
+        FROM battles
+        WHERE region_ID = ?
+        ORDER BY year, battle_name
+        ''', [id]).fetchall()
+    
+    qtd = db.execute(
+        '''
+        SELECT count(battle_id) AS qtd
+        FROM battles
+        WHERE region_ID = ?
+        ''', [id]
+        ).fetchone()
+    
+    return render_template('battlesbyregion.html', battles=battles, qtd=qtd)
+
 ############ CASAS
 @APP.route('/houses')
 def houses():

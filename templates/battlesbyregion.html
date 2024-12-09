@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Thrones</title>
+    <link rel="stylesheet" href="../../static/css/lists.css"/>
+    <script src="../../static/js/regions.js" defer></script>
+
+</head>
+<body>
+
+    <button onclick="window.location.href='/'" class="btn-home">
+        Home
+    </button>
+
+    <center>
+      <h1>Battles</h1>
+    
+      <p><i>Quantidade de elementos: {{qtd.qtd}}</i></p>
+
+    
+    </center>
+    <table>
+      <tr>
+        <th>
+            <b>Year</b>
+          </th>
+        <th>
+          <b>Name</b>
+        </th>
+        <th>
+          <b>Type</b>
+        </th>
+      </tr>
+      {% for b in battles %}
+      <tr>
+        <td>
+            {{ b.year }}
+          </td>
+        <td>
+          <a href="/battles/{{ b.battle_id }}">{{ b.battle_name }}</a> 
+        <td>
+          {{ b.battle_type }}
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+
+</body>
+</html>
