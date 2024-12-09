@@ -14,10 +14,19 @@
         Home
     </button>
 
-    <center><h1>Battles</h1>
+    <center>
+      <h1>Battles</h1>
     
-    <p><i>Quantidade de elementos: {{qtd.qtd}}</i></p>
-</center>
+      <p><i>Quantidade de elementos: {{qtd.qtd}}</i></p>
+
+      <div class="search-container">
+        <form action="/search" method="GET">
+            <input type="text" name="query" class="search-input" placeholder="search..." />
+            <button type="submit" class="search-btn">🔍</button>
+        </form>
+      </div>
+    
+    </center>
     <table>
       <tr>
         <th>
@@ -36,8 +45,7 @@
             {{ b.year }}
           </td>
         <td>
-          <a href="/battles/{{ b.battle_id }}">{{ b.battle_name }}</a>
-        </td>
+          <a href="/battles/{{ b.battle_id }}">{{ b.battle_name }}</a> 
         <td>
           {{ b.battle_type }}
         </td>

@@ -1,88 +1,131 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Outfit:wght@100..900&family=Uncial+Antiqua&display=swap');
 
 body {
-    margin: 0;
-    height: 100%;
-    background-image: url('../map.jpg'); /* Atualize com o caminho correto */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    user-select: none; /* Previne seleção do texto/imagem */
-    overflow: hidden; /* Remove scroll indesejado */
-    font-family: "Cinzel Decorative", "Outfit", Arial;
+    margin: 0;  
+    height: 100vh; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../map.jpg'); 
+    background-size: cover;  
+    background-position: center; 
+    background-attachment: fixed;  
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 40px;
+    font-family: 'Cinzel Decorative', serif;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+
 }
 
-.icon {
-    position: fixed;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    z-index: 10;
-    background-size: cover;
-    background-position: center;
-}
-
-/* Previne arrastar imagens */
-.icon img {
-    pointer-events: none;
-}
-
-/* Específicos das casas */
-/* #iconArryn { background-image: url('../assets/Arryn.png'); }
-#iconBaratheon { background-image: url('../assets/Baratheon.png'); } */
-/* Adicione os outros ícones aqui */
-
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 999;
-    justify-content: center;
-    align-items: center;
-}
-
-.modal.show {
+.container {
     display: flex;
-}
-
-.modal-content {
-    background-color: white;
-    color: black;
-    padding: 20px;
-    width: 80%;
-    max-width: 500px;
-    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.40);
+    border-radius: 30px;
+    padding: 30px;
+    width: 800px;
+    max-width: 600px;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #f0c581;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+a:hover {
+    background-color: #97733e;
+}
+
+.dropdown-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: black;
+}
+
+.dropdown-container span {
+    margin:10px;
+    font-weight: bold;
+}
+
+.dropdown {
     position: relative;
+    display: inline-block;
 }
 
-.close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-/* Botão para voltar */
-.back-button {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    background-color: #333;
-    color: white;
+.dropdown button {
+    background-color: #f0c581;
+    color: black;
+    padding: 10px 20px;
+    font-size: 30px;
     border: none;
-    padding: 10px 15px;
-    font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cinzel Decorative', serif;
+    font-weight: bold;
+    gap: 10px;
+    width: 150px;
 }
 
-.back-button:hover {
-    background-color: #555;
+.dropdown button::after {
+    content: '▼';
+    font-size: 20px;
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+.dropdown button:hover {
+    background-color: #b58a49;
+}
+
+.dropdown:hover button::after {
+    transform: rotate(180deg); 
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff00;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #a27d41;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }

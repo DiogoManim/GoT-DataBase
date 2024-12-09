@@ -9,33 +9,49 @@ body {
     background-attachment: fixed;  
     color: #000;
     justify-content: center;
-     align-items: center;
+    align-items: center;
+    font-weight: bold;
 }
 
 h1 {
     font-family: "Cinzel Decorative";
     font-weight: bold;
+    font-size: 35px;
+    margin-top: 40px;
+}
+h2 {
+    font-family: "Cinzel Decorative";
+    font-weight: bold;
+    font-size: 25px;
     margin-top: 40px;
 }
 
-p {
+.link {
+    transition: transform 0.3s ease; 
+}
+.link:hover {
+    transform: scale(1.2);
+}
+
+a {
+    font-size: 25px;
     font-family: 'Outfit';
+    color: inherit; 
+    text-decoration: none;
 }
 
 .btn-home {
-    position: absolute; 
+    font-family: 'Cinzel Decorative', serif;
+    position: relative; 
     top: 30px; 
-    /* left: 50%;  */
     left: 100px;
+    margin: 50px;
     transform: translateX(-50%); 
     padding: 10px 30px;
-    font-size: 24px;
-    font-family: "Cinzel Decorative";
+    font-size: 30px;
     border: none;
     background-color: #333;
     color: white;
-    /* background-color: #041629; 
-    color: white; */
     cursor: pointer;
     border-radius: 15px;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -61,6 +77,12 @@ p {
     width: 70px;
     height: 80px;  
     z-index: 10;
+    transition: transform 0.3s ease; 
+
+}
+
+.icon:hover{
+    transform: scale(1.2);
 }
 
 .container {
@@ -70,120 +92,89 @@ p {
     right: 100px;
     z-index: 10;
     text-align: center;
-    background-color: rgba(222, 206, 171, 0.9);
-    /* background-color: rgba(221, 197, 146, 0.9); */
+    background-color: rgba(222, 206, 171, 0.7);
     border-radius: 20px;
     width: 310px;
+    height: 700px;
     box-shadow: 0 4px 10px rgba(86, 82, 82, 0.4); 
 }
 
+p{
+    font-size: 25px;
+}
+
 .containermodal {
+    align-items: center;
+    margin: auto;
+    margin-top: 300px;
+    z-index: 10;
     text-align: center;
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 20px;
-    width: 750px;
+    width: 800px;
+    height: fit-content;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(86, 82, 82, 0.4); 
 }
 
 #iconArryn{
     background-image: url('../assets/Arryn.png');
     background-size: cover; 
     background-position: center;
+    top: 35vh; left: 43vh;
 }
 #iconBaratheon{
     background-image: url('../assets/Baratheon.png');
     background-size: cover; 
     background-position: center;
+    top: 63vh; left: 40vh;
 }
 #iconGreyjoy{
     background-image: url('../assets/Greyjoy.png');
     background-size: cover; 
     background-position: center;
+    top: 35vh; left: 17vh;
 }
 #iconHightower{
     background-image: url('../assets/Hightower.png');
     background-size: cover; 
     background-position: center;
+    top: 50vh; left: 27vh;
 }
 #iconLannister{
     background-image: url('../assets/Lannister.png');
     background-size: cover; 
     background-position: center;
+    top: 47vh; left: 22vh;
 }
 #iconMartell{
     background-image: url('../assets/Martell.png');
     background-size: cover; 
     background-position: center;
+    top: 75vh; left: 30vh;
 }
 #iconStark{
     background-image: url('../assets/Stark.png');
     background-size: cover; 
     background-position: center;
+    top: 15vh; left: 34vh;
 }
-#iconTargaryen{
-    background-image: url('../assets/Targaryen.png');
+#iconBaratheon2{
+    background-image: url('../assets/Baratheon.png');
     background-size: cover; 
     background-position: center;
+    top: 50vh; left: 40vh;
 }
 #iconTully{
     background-image: url('../assets/Tully.png');
     background-size: cover; 
     background-position: center;
+    top: 46vh; left: 32vh;
 }
 #iconTyrell{
     background-image: url('../assets/Tyrell.png');
     background-size: cover; 
     background-position: center;
+    top: 57vh; left: 27vh;
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; 
-    height: 100%; 
-    background: rgba(0, 0, 0, 0.7); 
-    z-index: 999;
-    justify-content: center;
-    align-items: center;
-}
-
-.modal.show {
-    display: flex;
-}
-
-.modal-content {
-    width: 50% !important;
-    margin: auto;
-    background-color: rgb(255, 255, 255);
-    color: black;
-    padding: 40px;
-    max-width: 500px; 
-    height: auto;
-    text-align: center;
-    border-radius: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: fixed;
-    top: 100px;
-    left: 370px;
-    align-self: center;
-    z-index: 10;
-}
-
-
-
-.close {
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
-    position: absolute;
-    top: 0;
-    right: 15px;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}

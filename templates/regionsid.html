@@ -13,11 +13,11 @@
         Home
     </button>
 
-    <div class="modal-content">
+    <div class="containermodal">
         <h1>{{region.Region}}</h1>
 
         {% if ruller %}
-        <p>Rulled by: <a href="/houses/{{ruller.House_ID}}">{{ruller.House}}</a> </p>
+        <p class="link">Rulled by: <a href="/houses/{{ruller.House_ID}}">{{ruller.House}}</a> </p>
 
         {% else %}
         <p><i>Not rulled by any house</i></p>
@@ -29,14 +29,13 @@
         <h2>See more about the {{region.Region}}:</h2>
 
         
-            <p><a href="/regions/{{region.Region_ID}}/battles">Battles</a></p>
-            <p><a href="/regions/{{region.Region_ID}}/houses">Houses</a></p>
-            <p><a href="/regions/{{region.Region_ID}}/cities">Cities</a></p>
+            <p class="link"><a href="/regions/{{region.Region_ID}}/battles">Battles</a></p>
+            <p class="link"><a href="/regions/{{region.Region_ID}}/houses">Houses</a></p>
+            <p class="link"><a href="/regions/{{region.Region_ID}}/cities">Cities</a></p>
  
  
     </div>
 
-    <div class=""></div>
 
 </body>
 </html>

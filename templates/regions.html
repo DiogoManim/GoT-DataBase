@@ -18,44 +18,32 @@
         <h1>Regions</h1>
 
         {% for region in regions %}
-        <p>
+        <p class="link">
         <a href="/regions/{{region.Region_ID}}">{{region.Region}}</a>
         </p>
         {% endfor %}
     </div>
 
-    <div class="icon" id="iconArryn" style="top: 35vh; left: 43vh;" onclick="openModal('arryn')"></div>
-    <div id="arryn" class="modal"></div>
+    <div class="icon" id="iconArryn" onclick="window.location.href='/regions/2'"></div>
 
-    <div class="icon" id="iconBaratheon" style="top: 63vh; left: 40vh;" onclick="openModal('baratheon')"></div>
-    <div id="baratheon" class="modal"></div>
+    <div class="icon" id="iconBaratheon" onclick="window.location.href='/regions/8'"></div>
 
-    <div class="icon" id="iconGreyjoy" style="top: 35vh; left: 17vh;" onclick="openModal('greyjoy')"></div>
-    <div id="greyjoy" class="modal"></div>
+    <div class="icon" id="iconGreyjoy" onclick="window.location.href='/regions/4'"></div>
 
-    <div class="icon" id="iconHightower" style="top: 50vh; left: 27vh;" onclick="openModal('hightower')"></div>
-    <div id="hightower" class="modal"></div>
+    <div class="icon" id="iconHightower" onclick="window.location.href='/regions/'"></div>
 
-    <div class="icon" id="iconLannister" style="top: 47vh; left: 22vh;" onclick="openModal('lannister')"></div>
-    <div id="lannister" class="modal"></div>
+    <div class="icon" id="iconLannister" onclick="window.location.href='/regions/5'"></div>
 
-    <div class="icon" id="iconMartell" style="top: 75vh; left: 30vh;" onclick="openModal('martell')"></div>
-    <div id="martell" class="modal"></div>
+    <div class="icon" id="iconMartell" onclick="window.location.href='/regions/9'"></div>
 
-    <div class="icon" id="iconStark" style="top: 15vh; left: 34vh;" onclick="openModal('stark')"></div>
-    <div id="stark" class="modal"></div>
+    <div class="icon" id="iconStark" onclick="window.location.href='/regions/1'"></div>
 
-    <div class="icon" id="iconTargaryen" style="top: 50vh; left: 40vh;" onclick="openModal('targaryen')"></div>
-    <div id="targaryen" class="modal"></div>
+    <div class="icon" id="iconBaratheon2" onclick="window.location.href='/regions/6'"></div>
 
-    <div class="icon" id="iconTully" style="top: 46vh; left: 32vh;" onclick="openModal('tully')"></div>
-    <div id="tully" class="modal"></div>
+    <div class="icon" id="iconTully" onclick="window.location.href='/regions/3'"></div>
 
-    <div class="icon" id="iconTyrell" style="top: 57vh; left: 27vh;" onclick="openModal('tyrell')"></div>
-    <div id="tyrell" class="modal"></div>
+    <div class="icon" id="iconTyrell" onclick="window.location.href='/regions/7'"></div>
 
-
-    <div class=""></div>
 
 </body>
 </html>
