@@ -8,6 +8,22 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Outfit:wght@100..900&family=Uncial+Antiqua&display=swap">
 </head>
 <body>
+
+    <audio id="background-audio" autoplay loop>
+        <source src="../static/intro.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+      </audio>
+
+      <script>
+        const audio = document.getElementById('background-audio');
+        const volumeControl = document.getElementById('volume-control');
+        audio.volume = 0.1;
+        volumeControl.addEventListener('input', () => {
+          audio.volume = volumeControl.value;
+        });
+      </script>
+
+
     <div class="container">
         <h1>Game of Thrones</h1>
         <a href="/regions">Map</a>
