@@ -47,10 +47,10 @@ body {
     align-items: center;
     font-size: 18px;
     margin: auto;
-    margin-top: 300px;
+    /* margin-top: 300px; */
     z-index: 10;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 20px;
     width: 500px;
     height: fit-content;

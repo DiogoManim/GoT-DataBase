@@ -161,6 +161,24 @@ def get_house(id):
 
     return render_template('housesid.html', house=house, battles=battles, characters=characters)
 
+@APP.route('/houses/search/<expr>/')
+def search_house(expr):
+  if (not str.isalpha(expr)):
+      abort(404, 'expression is not valid')
+      
+  search = { 'expr': expr }
+  expr = '%' + expr + '%'
+  houses = db.execute(
+      ''' 
+      SELECT House, House_ID, Words
+      FROM Houses
+      WHERE House LIKE ?
+      ''', [expr]).fetchall()
+  
+  if not houses:
+      abort(404, 'there are no houses with this expression')
+
+  return render_template('housesearch.html', search=search, houses=houses)
 
 ############ BATALHAS
 @APP.route('/battles')
@@ -252,6 +270,24 @@ def get_battle(id):
     return render_template('battlesid.html', battle=battle, defender_king=defender_king, attacker_king=attacker_king, region=region, attack_commanders=attack_commanders, defense_commanders=defense_commanders, attacker_houses=attacker_houses, defender_houses=defender_houses)
 
 
+@APP.route('/battles/search/<expr>/')
+def search_battle(expr):
+  if (not str.isalpha(expr)):
+      abort(404, 'expression is not valid')
+      
+  search = { 'expr': expr }
+  expr = '%' + expr + '%'
+  battles = db.execute(
+      ''' 
+      SELECT battle_name, battle_ID, battle_type, year
+      FROM battles
+      WHERE battle_name LIKE ?
+      ''', [expr]).fetchall()
+  
+  if not battles:
+      abort(404, 'there are no battles with this expression')
+      
+  return render_template('battlesearch.html', search=search, battles=battles)
 
 
 ############ CIDADES
@@ -300,6 +336,25 @@ def get_city(id):
         ''', [id]).fetchall()
 
     return render_template('citiesid.html', city=city, region=region, houses=houses)
+
+@APP.route('/cities/search/<expr>/')
+def search_city(expr):
+  if (not str.isalpha(expr)):
+      abort(404, 'expression is not valid')
+      
+  search = { 'expr': expr }
+  expr = '%' + expr + '%'
+  cities = db.execute(
+      ''' 
+      SELECT city, region, city_id
+      FROM cities NATURAL JOIN regions
+      WHERE city LIKE ?
+      ''', [expr]).fetchall()
+  
+  if not cities:
+      abort(404, 'there are no cities with this expression')
+      
+  return render_template('citysearch.html', search=search, cities=cities)
 
 
 ############ PERSONAGENS
@@ -354,6 +409,25 @@ def get_character(id):
 
     return render_template('charactersid.html', character=character, king_battles=king_battles, command_battles=command_battles)
 
+
+@APP.route('/characters/search/<expr>/')
+def search_character(expr):
+  if (not str.isalpha(expr)):
+      abort(404, 'expression is not valid')
+      
+  search = { 'expr': expr }
+  expr = '%' + expr + '%'
+  characters = db.execute(
+      ''' 
+      SELECT character, character_ID, Title
+      FROM characters
+      WHERE character LIKE ?
+      ''', [expr]).fetchall()
+  
+  if not characters:
+      abort(404, 'there are no characters with this expression')
+      
+  return render_template('charactersearch.html', search=search, characters=characters)
 
 @APP.route('/curiosities')
 def curiosities():

@@ -31,12 +31,15 @@
         <p>Major death: Yes </p>
         {% endif %}
 
+        {% if battle.is_attacker_winner %}
+        <div class="opcolor">
+            {% endif %}
         <div class="op1">
             <h2> ATTACK </h2>
 
             <img src="{{attacker_king.imageUrl}}">
 
-            <h2> <a href="/characters/{{attacker_king.character_ID}}">{{attacker_king.character}}</a> </h2>
+            <h3> <a href="/characters/{{attacker_king.character_ID}}">{{attacker_king.character}}</a> </h3>
 
             <br>
             {% if battle.attacker_size %}
@@ -58,6 +61,13 @@
                {% endfor %}
             <br>
         </div>
+        {% if battle.is_attacker_winner %}
+    </div>
+    {% endif %}
+
+    {% if not battle.is_attacker_winner %}
+        <div class="opcolor">
+            {% endif %}
         <div class="op2">
             <h2> DEFENSE </h2>
 
@@ -85,6 +95,9 @@
                {% endfor %}
             <br>
         </div>
+        {% if not battle.is_attacker_winner %}
+    </div>
+    {% endif %}
     </div>
 
 

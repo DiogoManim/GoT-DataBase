@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game of Thrones</title>
-    <link rel="stylesheet" href="../static/css/lists.css"/>
-    <script src="../static/js/regions.js" defer></script>
+    <link rel="stylesheet" href="../../../static/css/lists.css"/>
+    <script src="../../static/js/regions.js" defer></script>
 
 </head>
 <body>
@@ -17,14 +17,7 @@
     <center>
       <h1>Cities</h1>
     
-      <p><i>Quantidade de elementos: {{qtd.qtd}}</i></p>
-
-      <div class="search-container">
-        <form name="msearch" action="javascript:window.open('/cities/search/'+document.forms['msearch'].elements['expr'].value,'_self')">
-          <input name="expr" class="search-input" id="expr" placeholder="Search..." required/>
-        <button type="submit" class="search-btn">🔍</button>
-        </form>
-      </div>
+      <p><i>Searched expression: '{{search.expr}}'</i></p>
 
     </center>
     <table>

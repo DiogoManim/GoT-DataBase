@@ -60,21 +60,110 @@ body {
 
 .titulo {
     font-size: 40px;
-    font-weight: 300;
+    font-weight: 3500;
     text-align: center;
     padding: 3vw;
     position: relative;
     margin-bottom: 0;
 }
 
+h3 {
+    font-family: "Cinzel Decorative";
+    font-size: "35px";
+}
+
 
 a {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
-    color:#0e233a; 
+    color:#0e2d4e; 
     text-decoration: none;
     transition: transform 0.3s ease; 
 }
+
+p {
+    font-size: 24px;
+}
+
+body {
+    margin: 0;  
+    height: 100%;  
+    background-size:cover;  
+    background-color: rgba(231, 223, 207, 0.9);
+    background-position: center; 
+    background-attachment: fixed;  
+    color: #000;
+    justify-content: center;
+    align-items: center;
+}
+
+
+div.container {
+    /* position: fixed;
+    top: 100px;
+    bottom: 80px;
+    right: 100px; */
+    align-items: center;
+    font-family: "Outfit";
+    font-size: 18px;
+    margin: auto;
+    z-index: 10;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* background-color: rgba(221, 197, 146, 0.9); */
+    border-radius: 20px;
+    width: 910px;
+    height: fit-content;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(86, 82, 82, 0.4); 
+
+    }
+
+    div.titulo {
+
+        font-size: 40px;
+        font-family: "Cinzel Decorative";
+        font-weight: 100;
+        text-align: center;
+        padding: 3vw;
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    div.op1 {
+        width: 400px;
+        height: fit-content;
+        display: inline-block;
+        /* background-color: rgba(180, 1, 1, 0.499); */
+        margin-top: 20px;
+        margin-left: 0vw;
+        margin-right: 50px;
+        border-radius: 20px;
+    }
+
+    div.opcolor {
+        width: 400px;
+        height: fit-content;
+        display: inline-block;
+        background-color: rgba(3, 150, 10, 0.499);
+        margin-top: 20px;
+        margin-left: 0vw;
+        margin-right: 50px;
+        border-radius: 20px;
+    }
+
+
+    div.op2 {
+        width: 400px;
+        height: fit-content;
+        /* background-color: rgba(7, 118, 7, 0.444); */
+        display: inline-block;
+        margin-top: 20px;
+        margin-right: 0vw;
+        margin-left: 50px;
+        border-radius: 20px;
+        float:right;
+    }
 
 img {
     width: 380px;
